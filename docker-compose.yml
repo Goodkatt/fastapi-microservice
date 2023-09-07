@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  microservice-a: 
+    build: ./microservice-a
+    ports:
+      - 80:80
+  microservice-b: 
+    build: ./microservice-b
+    ports:
+      - 8080:80
