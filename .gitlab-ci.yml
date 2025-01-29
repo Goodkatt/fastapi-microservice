@@ -11,7 +11,7 @@ build_image:
   image: docker:latest
   services:
     - docker:dind
-  before_script:
+  script:
     # Clone the GitHub repository
     - docker build -t microservice-a:1.0 -f microservice-a/Dockerfile  # Run only on main branch
 
